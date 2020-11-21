@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Goldman:wght@700&family=Modak&family=Montserrat:wght@500&family=Noto+Sans+KR:wght@900&family=Oswald&family=Slabo+27px&family=Stalinist+One&display=swap');
+#player #container {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: auto;
+  background-color: black;
+}
+#project-item {
+  border-radius: 50px;
+}
+#player #container #header h1 {
+  font-size: 120px;
+  letter-spacing: 4px;
+  font-family: 'Architects Daughter', cursive;
+  display: block;
+  text-align: center;
+  color: white;
+}
+#player #container {
+  padding-bottom: 50px;
+}
+#project-item:nth-child(even){
+  flex-direction: row-reverse;
+}
+#project-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 300px;
+  width: 50%;
+  /* max-width: 1200px; */
+  margin:0 auto;
+  background-color: brown;
+}
+#all-projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#project-item #player-name {
+  flex-basis: 50%;
+  padding: 40px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Slabo 27px', serif;
+  letter-spacing: 1px;
+  color: white;
+  background-color: black;
+}
+#project-item #player-name h1 {
+  font-size: 30px;
+  font-family: 'Slabo 27px', serif;
+}
+#image {
+  width: 50%;
+  text-align: center;
+}
+#image img {
+  width: 300px;
+  transition: .5s ease transform;
+  padding:25px;
+  cursor: pointer;
+  object-fit: cover;
+}
+#image img:hover {
+  transform: scale(1.2);
+}
+@media all and (max-width: 1200px) {
+  #project-item {
+    width:70%;
+  }
+}
+@media all and (max-width: 900px) {
+  #project-item {
+    width:100%;
+  }
+}
+@media all and (max-width: 650px) {
+  #project-item #player-name h2{
+    font-size: 15px;
+  }
+  #project-item #player-name h1 {
+    font-size: 20px;
+  }
+}
+@media all and (max-width : 600px) {
+  #project-item {
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  #project-item:nth-child(even){
+    flex-direction: column;
+  }
+  #image {
+    width: 100%;
+
+  }
+  #project-item #player-name {
+    width: 100%;
+    padding: 10px;
+  }
+  #image img {
+    width: 200px;
+  }
+  #player #container #header h1 {
+    font-size: 80px;
+  }
+}
+@media all and (max-width : 400px) {
+  #player #container #header h1 {
+    font-size: 60px;
+  }
+}
+

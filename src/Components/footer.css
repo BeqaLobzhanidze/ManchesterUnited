@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+.footer {
+  background-color: black;
+  width: 100%;
+  height: 70px;
+}
+
+#containerjs {
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  border-left:5px solid red;
+  border-right: 5px solid red;
+  border-top: 1px solid white;
+}
+#containerjs h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: 'Xanh Mono', monospace;
+}
+#foo11 , 
+#foo22 , 
+#foo33 {
+  width: 50px;
+  height: 50px;
+}
+#foo2 {
+  margin-left:auto;
+}
+#foo1 {
+  margin-left: 20px;
+  transition: .5s ease transform;
+  cursor: pointer;
+}
+#foo3 ,
+#foo2 {
+  margin-right: 20px;
+  transition: .5s ease transform;
+  cursor: pointer;
+}
+#foo1:hover , 
+#foo2:hover ,
+#foo3:hover {
+  transform: scale(1.1);
+}
+@media all and (max-width:700px) {
+  #containerjs {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  #containerjs h1{
+    flex: 1 1 100%;
+  }
+  #foo1 {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+  #foo2 , 
+  #foo3 {
+    flex: 1 1 45%;
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
